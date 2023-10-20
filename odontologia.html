@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SMM - Odontologia</title>
+    <link rel="icon" type="image/x-icon" href="./IMG/WhatsApp Image 2023-09-22 at 12.23.30.jpeg">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+    <link rel='stylesheet' href='CSS/bootstrap.css'>
+    <link rel='stylesheet' href='CSS/Config.module.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./CSS/Header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./CSS/atencaobasica.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./CSS/exames.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./CSS/footer.css'>
+</head>
+
+<body>
+    <header class="d-flex justify-content-around align-items-center">
+        <a href="home.html">
+            <img class="logo" src="/IMG/logo.png" alt="Saúde Muito Mais">
+        </a>
+        <div class="d-flex gap-3 flex-wrap">
+            <ul class="navbar-nav d-flex flex-row gap-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="ouvidoria.html">
+                        Ouvidoria
+                        <i class="fa-solid fa-headset"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Notificações
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="usuario.html">
+                        Usuário
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-md bg-dodgerblue navbar-dark">
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarCollapse" class="navbar-collapse collapse">
+            <ul class="navbar-nav w-100 me-auto justify-content-around align-items-center">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="home.html">INICIO <i class="fa-solid fa-house"></i></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">MARCAÇÕES</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="exames.html">EXAMES</a>
+                        <a class="dropdown-item" href="consultas.html">CONSULTAS</a>
+                        <a class="dropdown-item" href="transporte.html">TRANSPORTE</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="medicamentos.html">MEDICAMENTOS</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">AGENTES</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="agenteSaude.html">DE SAÚDE</a>
+                        <a class="dropdown-item" href="agenteEndemias.html">DE ENDEMIAS</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">CORDENADORIAS</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="atencaobasica.html">ATENÇÃO BÁSICA</a>
+                        <a class="dropdown-item" href="epidemiologica.html">EPIDEMIOLÓGICA</a>
+                        <a class="dropdown-item" href="vigilanciaSanitaria.html">VIGILÂNCIA SANITÁRIA</a>
+                        <a class="dropdown-item" href="odontologia.html">ODONTOLOGIA</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="melhoremcasa.html">MELHOR EM CASA</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <article class="apresentacao">
+            <div class="container-apresentacao">
+              <div>
+                <p>
+                    A Odontologia é a ciência que se dedica ao estudo e ao tratamento dos dentes, dos ossos da face, da gengiva, da língua, 
+                    da mordida e da articulação da mandíbula com o crânio. Também busca criar e melhorar procedimentos que aumentem a autoestima dos pacientes.
+                </p>
+              </div>
+              <div>
+                <img src="./IMG/odontologia.jpg" alt="" />
+              </div>
+            </div>
+          </article>
+
+          
+        <article>
+                <form>
+                      <div class="file-receita">
+                        <p>Anexar Relatório: </p>
+                        <label class="receita" for="arquivo">Enviar arquivo</label>
+                        <input type="file" name="arquivo" id="arquivo">
+                      </div>
+        
+                      <div>
+                          <p>Local de atendimento:</p>
+                          <select name="" id=""> 
+                            <option value="">SMS - SECRETARIA MUNICIPAL DE SAÚDE</option>
+                          </select>
+                      </div>
+        
+                      <div>
+                            <p>Informe o CID do seu Relatório:</p>
+                            <input type="text" placeholder="Encontre seu CID na sua receita. Ex: CID Z10" required>
+                      </div>
+        
+                      <div class="aviso">
+                        <h4>Aviso <span>⚠</span></h4>
+                        <p>Antes de confirmar é necessário anexar seu relatório médico para prosseguirmos com a solicitação , ao confimar, sua solicitação ficará como "pendente", 
+                           após confirmação você recebera uma notificação informando sobre sua solicitação ou Anexar a relatorio novamente.</p>
+                        <label for=""><input type="checkbox" required> Li e concordo com os <span>termos e serviços</span></label>
+                      </div>
+                      <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">ENVIAR</button>
+                </form>
+        </article>
+        <article>
+    </main>
+    <footer class="footer">
+        <div class="rodape-nome">
+            <img src="/IMG/logo.png" alt="Saude Muito Mais">
+        </div>
+        <div class="inicio">
+            <h3>Inicio</h3>
+            <p><a href="home.html">Home</a></p>
+            <p><a href="#">Help desk</a></p>
+            <p><a href="#">Suporte</a></p>
+        </div>
+        <div class="sobre">
+            <h3>Sobre-nós</h3>
+            <p><a href="#">Informações</a></p>
+            <p><a href="#">Contato</a></p>
+            <p><a href="#">Blog</a></p>
+        </div>
+        <div class="suporte">
+            <h3>Suporte</h3>
+            <p><a href="#">FAQ</a></p>
+            <p><a href="#">Telefones</a></p>
+            <p><a href="#">Chat</a></p>
+        </div>
+        <div class="socialmedia">
+            <div>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <button>Contato</button>
+        </div>
+
+    </footer>
+    <div class="credito">
+        <p>Desenvolvido por <a href="#">Evilazio, João Vitor, Rodrigo e Robert</a></p>
+    </div>
+</body>
+
+</html>
+
+<script src='js/popper.js'></script>
+<script src='js/bootstrap.js'></script>

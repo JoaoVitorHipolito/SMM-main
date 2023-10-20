@@ -1,0 +1,145 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(57, 57, 216);
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.form .contentLogin{
+    width: 80%;
+    padding-inline: .5rem;
+}
+
+.form .login-dados{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+    font-weight: bold;
+}
+
+.form .login-dados h1{
+    text-align: center;
+}
+
+.form .lembrarUsuario{
+    display: flex;
+    justify-content: space-between;
+    margin-block: .5rem;
+}
+
+.form .lembrarUsuario a{
+    text-decoration: none;
+    color: rgb(57, 57, 216);
+}
+
+.form .login-Cadastro button{
+    background-color: rgb(57, 57, 216);
+    color: #fffafa;
+    padding: .5rem;
+    border: 3px solid rgb(57, 57, 216);
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s ease;
+}
+
+.form .login-Cadastro button{
+    margin-bottom: .5rem;
+}
+
+
+.form .login-Cadastro button:hover{
+    background-color: #fffafa;
+    color: rgb(57, 57, 216);
+    border: 3px solid rgb(57, 57, 216);
+}
+
+.form input{
+    padding: .5rem;
+    border: none;
+    border-bottom: 1px solid rgb(57, 57, 216);
+    font-size: 1rem;
+    background-color: #fffafa;
+}
+
+.form input:invalid{
+    color: red;
+}
+
+.form input:valid{
+    color: rgb(5, 100, 5);
+}
+
+.form input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.form img{
+    display: block;
+    margin: 0 auto;
+    width: 230px;
+}
+
+h1{
+    display: none;
+}
+
+@media (min-width: 1100px){
+    h1{
+        display: block;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url('https://watermark.lovepik.com/photo/40176/4710.jpg_wh1200.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 1rem;
+    }
+    
+    .form{
+        margin-top: 0;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem;
+        gap: 4rem;
+        background-color: #fffafa;
+        border-radius: 10px;
+    }
+
+    .form .login-dados{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        width: 400px;
+        font-weight: bold;
+    }
+
+    .form img{
+        width: 400px;
+    }
+
+    .form .login-Cadastro button{
+        padding: .5rem;
+        width: 49%;
+        margin-bottom: 0;
+    }
+}

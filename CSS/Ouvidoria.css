@@ -1,0 +1,53 @@
+.container-apresentacao h2 {
+    text-align: center;
+}
+
+h3, p{
+    color: #fffafa;
+}
+
+article:nth-child(2){
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ouvidoria{
+    width: 80%;
+    gap: .5rem;
+}
+
+.ouvidoria i {
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.ouvidoria div {
+    border-radius: 10px;
+    cursor: pointer;
+    height: 250px;
+}
+
+.ouvidoria div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.textOuvidoria p{
+    color: black;
+}
+
+@media (max-width: 1000px){
+    .ouvidoria{
+        flex-direction: column;
+    }
+
+    .ouvidoria div{
+        width: 100%;
+    }
+}

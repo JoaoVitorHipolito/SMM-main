@@ -1,0 +1,135 @@
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: .5rem;
+}
+
+.apresentacao h2{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.apresentacao .container-apresentacao{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-apresentacao div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;  
+}
+
+
+.container-apresentacao div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;  
+}
+
+.apresentacao .container-apresentacao div p{
+    font-size: 1.3rem;
+}
+
+.container-apresentacao div img{
+    width: 550px;
+    display: block;
+    margin: 0 auto;
+}
+
+main article:nth-child(1){
+    padding: .2rem 1rem;
+}
+
+main article:nth-child(2){
+    width: 100%;
+}
+
+main article:nth-child(2) .container-agente{
+    display: flex;
+    justify-content: center;
+}
+
+.form-agente{
+    box-shadow: 0px 0px 5px gray;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    width: auto;
+    padding: .5rem;
+}
+
+form textarea { 
+    resize:none;
+    border: 1px solid gray;
+    border-radius: .5rem;
+}
+
+.form-agente p{
+    font-weight: bold;
+}
+
+.form-agente div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-agente button{
+    border: none;
+    background-color: dodgerblue;
+    color: #fffafa;
+    padding: .5rem;
+    width: 90%;
+}
+
+@media(max-width: 1100px){
+    article .container-apresentacao{
+        flex-direction: column;
+    }
+
+    .container-apresentacao div:nth-child(1){
+        width: 100%;
+        margin-bottom: .5rem;
+    }
+
+    .container-apresentacao div:nth-child(2){
+        width: 100%;
+    }
+
+    .container-apresentacao div:nth-child(2) img{
+        width: 70%;
+    }
+}
+
+
+@media(max-width: 700px){
+
+    main article:nth-child(2) .container-agente .form-agente{
+        flex-direction: column;
+        gap: .5rem;
+        text-align: center;
+        width: 95%;
+    }
+
+    .form-agente div:nth-child(2){
+        gap: .5rem;
+    }
+    .form-agente div:nth-child(2) button{
+        width: 100%;
+    }
+
+    textarea{
+        width: 95%;
+    }
+
+    .container-apresentacao div:nth-child(2) img{
+        width: 90%;
+    }
+}

@@ -1,0 +1,67 @@
+body{
+    background-color: #fffaff;
+}
+
+p,label, h1, h2,h3,h4, div, ul{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    padding: .5rem;
+}
+
+header ul li a{
+    color: rgb(57, 57, 216) !important;
+    font-size: 1.2rem !important;
+}
+
+header .logo{
+    width: 150px;
+}
+
+nav{
+    background-color: dodgerblue;
+    padding: 0 !important;
+}
+
+nav ul li{
+    text-align: center;
+}
+
+nav ul li{
+    color: #fffaff;
+    padding: 0 !important;
+    transition: .3s ease;
+}
+
+nav ul li:hover{
+    background-color: rgb(57, 57, 216);
+}
+
+@media (max-width: 1150px){
+    nav ul li{
+        font-size: .8rem;
+    }
+}
+
+@media(max-width: 600px){
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header div{
+        margin-top: .5rem;
+    }
+
+    nav ul li a{
+        padding-inline: 2rem !important;
+    }
+}
+
+@media(max-width: 300px){
+    header div ul li a{
+        font-size: .8rem !important;
+    }
+}

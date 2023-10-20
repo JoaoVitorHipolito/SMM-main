@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100svh;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 2200px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ol{
+    margin: 0;
+}

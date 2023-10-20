@@ -1,0 +1,304 @@
+input[type="file"] {
+    display: none;
+}
+
+h1,h2,h3,h4 {
+    color: rgb(57, 57, 216);
+}
+
+ol{
+    padding-left: 1rem;
+}
+
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: .5rem;
+}
+
+.apresentacao h2{
+    width: 100%;
+    text-align: left;
+}
+
+.apresentacao .container-apresentacao{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-apresentacao div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;  
+}
+
+
+.container-apresentacao div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;  
+}
+
+.apresentacao .container-apresentacao div p{
+    font-size: 1.3rem;
+}
+
+.container-apresentacao div img{
+    width: 550px;
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul li{
+    transition: .3s ease;
+}
+
+.form-med p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.file-receita{
+    gap: .5rem;
+    margin-block: .5rem;
+}
+
+.lista-remedios{
+    margin-top: 1rem;
+}
+
+.lista-remedios ol li{
+    text-decoration: underline;
+}
+
+.div-ubs select{
+    padding: .5rem;
+    width: 100%;
+}
+
+.receita {
+    padding: 5px;
+    background-color: dodgerblue;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+main article{
+    padding: .2rem 1rem;
+    gap: 1rem;
+}
+
+
+main section:nth-child(1){
+    width: 35%;
+    box-shadow: 0px 0px 5px gray;
+    padding: .5rem;
+}
+
+.aviso{
+    margin-block: .5rem;
+}
+
+.aviso p{
+    font-size: .9rem;
+    color: gray;
+}
+
+.aviso label span{
+    color: rgb(57, 57, 216);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.aviso h4 span{
+    color: red;
+    animation: animate .5s linear infinite;
+}
+
+@keyframes animate{
+    to{
+        color: orangered;
+    }
+}
+
+main section:nth-child(2){
+    width: 65%;
+    box-shadow: 0px 0px 5px gray;
+    padding: .5rem;
+}
+
+main section:nth-child(2) h2{
+    margin-bottom: .5rem;
+}
+
+main section:nth-child(1) button{
+    width: 100%;
+    padding: 5px;
+    background-color: dodgerblue;
+    color: #FFF;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.buttonsFarm{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-bottom: .5rem;
+}
+
+.buttonsFarm div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: dodgerblue;
+    color: #fffafa;
+    text-align: center;
+    width: 30%;
+    padding: .5rem;
+    cursor: pointer;
+    transition: .3s ease;
+    border-radius: 20px;
+}
+
+.buttonsFarm div:hover{
+    background-color: rgb(57, 57, 216);
+}
+
+button{
+    transition: .3s ease;
+}
+
+button:hover{
+    background-color: rgb(57, 57, 216);   
+}
+
+.container-remedios{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    max-height: 70vh;
+    overflow-y: scroll;
+    padding: .5rem;
+}
+
+.card-remedio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(20% - .5rem);
+    box-shadow: 0px 0px 5px gray;
+    cursor: pointer;
+    text-align: center;
+    padding: .5rem;
+}
+
+.card-remedio button{
+    width: 100%;
+    border: none;
+    background-color: dodgerblue;
+    color: #fffafa;
+    font-weight: bold;
+}
+
+.card-remedio img{
+    width: 100%;
+
+}
+
+@media(max-width: 1100px){
+    main section:nth-child(1){
+        width: 30%;
+    }
+    main section:nth-child(2){
+        width: 70%;
+    }
+
+    .card-remedio{
+        width: calc(25% - .5rem);
+        box-shadow: 0px 0px 5px gray;
+        cursor: pointer;
+    }   
+
+    article .container-apresentacao{
+        flex-direction: column;
+    }
+
+    .container-apresentacao div:nth-child(1){
+        width: 100%;
+        margin-bottom: .5rem;
+    }
+
+    .container-apresentacao div:nth-child(2){
+        width: 100%;
+    }
+
+    .container-apresentacao div:nth-child(2) img{
+        width: 70%;
+    }
+}
+
+@media(max-width: 800px){
+    main article:nth-child(2){
+        flex-direction: column;
+    }
+
+    main section:nth-child(1){
+        width: 100%;
+    }
+
+    main section:nth-child(2){
+        width: 100%;
+    }
+
+    article:nth-child(2){
+        flex-direction: column-reverse !important;
+    }
+
+    .card-remedio{
+        width: calc(33.3% - .5rem);
+        box-shadow: 0px 0px 5px gray;
+        cursor: pointer;
+    }
+
+    .buttonsFarm div{
+        width: 50%;
+        padding: .5rem;
+    }
+
+    .apresentacao h2{
+        text-align: center;
+    }
+
+    .container-apresentacao div:nth-child(2) img{
+        width: 90%;
+    }
+}
+
+@media(max-width: 600px){
+    .card-remedio{
+        width: calc(50% - .5rem);
+        box-shadow: 0px 0px 5px gray;
+        cursor: pointer;
+    }    
+}
+
+@media (max-width: 300px){
+    .apresentacao p{
+        text-align: center;
+        font-size: 1rem !important;
+    }
+
+
+    .card-remedio button, p{
+        font-size: .7rem;
+    }
+}

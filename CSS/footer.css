@@ -1,0 +1,147 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: dodgerblue;
+    padding: 30px;
+    margin-top: 1rem;
+}
+
+.footer img{
+    width: 150px;
+}
+
+.footer div h3{
+    color: #fffafa;
+    margin-bottom: 10px;
+}
+.footer div p{
+    margin-bottom: 5px;	
+}
+.footer div p a{
+    color: #fffafa;
+    text-decoration: none;
+
+}
+.footer div p a:hover{
+    text-decoration: underline;
+}
+
+.footer .socialmedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer .socialmedia i{
+    font-size: 2rem;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+
+.footer .socialmedia i:nth-child(1){
+    color: rgb(57, 57, 216);
+}
+
+.footer .socialmedia i:nth-child(2){
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    border-radius: .2rem;
+    padding: .1rem;
+}
+
+.footer .socialmedia i:nth-child(4){
+    color: rgb(207, 10, 10);
+}
+
+.footer .socialmedia i:hover{
+    transform: scale(1.1);
+}
+
+.footer button{
+    padding: 15px;
+    border-radius: 25px;
+    width: 100%;
+    background-color: rgb(57, 57, 216);
+    border: none;
+    color: #fffaff;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+.footer button:hover{
+    transform: scale(1.08);
+}
+.redes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.redes img{
+    max-width: 50px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+.redes h2{
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.contatos p:hover{
+    text-decoration: underline;
+}
+.redes img:hover{
+    transform: scale(1.1);
+}
+.credito{
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(57, 57, 216);
+    color: white;
+}
+.credito p a{
+    color: gold;
+    text-decoration: none;
+}
+
+
+@media (max-width: 700px){
+    .footer .rodape-nome h2{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .footer div{
+        margin: 10px;
+    }
+
+    .header h1{
+        font-size: 30px;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .contatos{
+        margin-top: 20px;
+    }
+
+    .redes{
+        margin-top: 30px;
+    }
+
+    .redes img{
+        max-width: 40px;
+    }
+}

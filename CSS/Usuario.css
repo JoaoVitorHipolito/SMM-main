@@ -1,0 +1,72 @@
+p{
+    margin-bottom: 0 !important;
+}
+
+.divFotoPerfil{
+    width: 100%;
+    margin-bottom: .5rem;
+    gap: .5rem;
+}
+
+.divFotoPerfil img{
+    border: solid 2px rgb(57, 57, 216);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.divFotoPerfil h2{
+    color: rgb(57, 57, 216);
+    text-align: center;
+}
+
+.user-info-container {
+    margin-top: 0px;
+}
+
+.aviso{
+    height: 100%;
+}
+
+.aviso label input{
+    width: 30px;
+}
+
+
+input[type='file'] {
+    display: none;
+}
+
+.max-width {
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+#imgPhoto {
+    width: 150px;
+    height: 150px;
+    background-color: #eee;
+    border: 5px solid rgb(57, 57, 216);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+#imgPhoto:hover{
+    background-color: rgb(180, 180, 180);
+    border: 5px solid dodgerblue;
+}
+
+.imageContainer{
+    gap: 1rem;
+}
+
+h4{
+    color: rgb(57, 57, 216);
+}
+
+@media (max-width: 800px){
+   .imageContainer{
+        flex-direction: column;
+   } 
+}

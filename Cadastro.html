@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="icon" type="image/x-icon" href="./IMG/WhatsApp Image 2023-09-22 at 12.23.30.jpeg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+    <title>SMM - Cadastre-se</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./CSS/Cadastro.module.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./CSS/Config.module.css'>
+</head>
+
+<body>
+
+    <form>
+        <div class="cad-users">
+            <h1>Cadastro</h1>
+            <div class="users">
+                <div>
+                    <i class="fa-solid fa-hospital-user"></i>
+                    <label for="user">Paciente</label>
+                    <input type="radio" name="user" id="user">
+                </div>
+                <div>
+                    <i class="fa-solid fa-user-tie"></i>
+                    <label for="adm">Profissional</label>
+                    <input type="radio" name="user" id="adm">
+                </div>
+            </div>
+
+            <div class="user-info-container">
+                <div>
+                    <h3>Dados do Usuário</h3>
+                    <div class="user-info">
+                        <div class="name">
+                            <p>Nome: <span>*</span></p>
+                            <input type="text">
+                        </div>
+                        <div class="lastname">
+                            <p>Sobrenome: <span>*</span></p>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="user-id">
+                        <div>
+                            <p>CPF: <span>*</span></p>
+                            <input type="text" placeholder="000.000.000-00">
+                        </div>
+                        <div>
+                            <p>RG: <span>*</span></p>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="CNS">
+                        <div>
+                            <p>CNS: <span>*</span></p>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <p>Senha: <span>*</span></p>
+                            <input type="password">
+                        </div>
+                    </div>
+
+                    <div class="birth">
+                        <label>Data de Nascimento: <span>*</span></label>
+                        <input id="date" type="date" value="2001-12-13" />
+                    </div>
+
+                    <h3>Contato</h3>
+                    <div class="cell-number">
+                        <div class="cell-ddd">
+                            <p>DDD: <span>*</span></p>
+                            <input type="text"  placeholder="(79)">
+                        </div>
+                        <div class="cell-n">
+                            <p>Número: <span>*</span></p>
+                            <input type="text" placeholder="99988-7766">
+                        </div>
+                    </div>
+                    <div>
+                        <p>E-mail: <span>*</span></p>
+                        <input type="text" placeholder="exemplo@gmail.com">
+                    </div>
+                </div>
+                <div class="adress">
+                    <div class="adress">
+                        <h3>Endereço: </h3>
+                        <div>
+                            <p>Rua e número: <span>*</span></p>
+                            <input type="text">
+
+                            <p>Bairro / Complemento: <span>*</span></p>
+                            <input type="text">
+
+                            <p>Cidade: <span>*</span></p>
+                            <input type="text">
+
+                            <p>Estado: <span>*</span></p>
+                            <input type="text">
+
+                            <p>CEP: <span>*</span></p>
+                            <input type="text">
+
+                            <p>País: <span>*</span></p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <a href="index.html">
+                        <button type="button" class="btn-cadastro">FINALIZAR CADASTRO</button>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </form>
+
+</body>
+
+</html>
